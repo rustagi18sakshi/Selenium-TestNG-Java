@@ -12,13 +12,16 @@ public class Log4j_Demo {
 		
 		System.out.println("\n Hello World \n");
 		
-		//In console, only error and fatal message will appear
+		//Property file is defined at src/main/resources/log4j2.properties
+		logger.debug("This is a debug message");
 		logger.info("This is an information message");
 		logger.error("This is an error message");
 		logger.warn("This is a warning message");
 		logger.fatal("This is a fatal message");
 		
-		System.out.println("Completed");
+		//This will not be logged since rootLevel for log is set as 'Debug'
+		logger.trace("This is a trace message");
 		
+		System.out.println("Completed");	
 	}
 }

@@ -1,0 +1,10 @@
+[DEBUG] 2021-02-20 01:45:58.855 [main] Log4j_Demo - This is a debug message
+[INFO ] 2021-02-20 01:45:58.857 [main] Log4j_Demo - This is an information message
+[ERROR] 2021-02-20 01:45:58.857 [main] Log4j_Demo - This is an error message
+[WARN ] 2021-02-20 01:45:58.857 [main] Log4j_Demo - This is a warning message
+[FATAL] 2021-02-20 01:45:58.857 [main] Log4j_Demo - This is a fatal message
+[DEBUG] 2021-02-20 02:00:20.428 [main] Log4j_Demo - This is a debug message
+[INFO ] 2021-02-20 02:00:20.430 [main] Log4j_Demo - This is an information message
+[ERROR] 2021-02-20 02:00:20.430 [main] Log4j_Demo - This is an error message
+[WARN ] 2021-02-20 02:00:20.430 [main] Log4j_Demo - This is a warning message
+[FATAL] 2021-02-20 02:00:20.430 [main] Log4j_Demo - This is a fatal message
