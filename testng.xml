@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!-- testNG format to run one class -->
+<!--  suite name="Suite1" parallel="false">
+  <test name="Test1">
+    <classes>
+      <class name="GoogleSearch_TestNG_Demo"/>
+    </classes>
+  </test>
+</suite -->
+
+<!-- testNG format to run two classes in parallel -->
+<!--  suite name="Suite1" parallel="classes" thread-count="5">
+  <test name="Test1">
+    <classes>
+      <class name="GoogleSearch_TestNG_Demo"/>
+      <class name="GoogleSearch_TestNG_Demo2"/>
+    </classes>
+  </test>
+</suite  -->
+
+<!-- testNG format to run two classes in parallel with only included method to be run
+ from 2nd class -->
+<suite name="Suite1" parallel="false" thread-count="5">
+  <test name="Test1">
+    <classes>
+      <class name="GoogleSearch_TestNG_Demo"/>
+      <class name="GoogleSearch_TestNG_Demo2">
+      		<methods>
+      			<include name="googleSearch3"></include>
+      		</methods>
+      </class>
+    </classes>
+  </test>
+</suite>

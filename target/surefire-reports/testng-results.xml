@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="35" started-at="2021-02-19T17:19:13 IST" finished-at="2021-02-19T17:19:14 IST">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="35" started-at="2021-02-19T17:19:13 IST" finished-at="2021-02-19T17:19:14 IST">
+      <class name="testngDemo.TestNGPriorityDemo">
+        <test-method status="PASS" signature="one()[pri:0, instance:testngDemo.TestNGPriorityDemo@23faf8f2]" name="one" duration-ms="3" started-at="2021-02-19T17:19:14 IST" finished-at="2021-02-19T17:19:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- one -->
+        <test-method status="PASS" signature="three()[pri:2, instance:testngDemo.TestNGPriorityDemo@23faf8f2]" name="three" duration-ms="1" started-at="2021-02-19T17:19:14 IST" finished-at="2021-02-19T17:19:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- three -->
+        <test-method status="PASS" signature="two()[pri:1, instance:testngDemo.TestNGPriorityDemo@23faf8f2]" name="two" duration-ms="0" started-at="2021-02-19T17:19:14 IST" finished-at="2021-02-19T17:19:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- two -->
+      </class> <!-- testngDemo.TestNGPriorityDemo -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
