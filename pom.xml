@@ -56,6 +56,8 @@
 	
   </dependencies>
   
+  <!-- Maven surefire plugin for running tests through command line and jenkins -->
+  <!-- Command to be used : mvn clean test/mvn clean test -Dfilename=testng5.xml -->
   <build>
   	<plugins>
       	<plugin>
