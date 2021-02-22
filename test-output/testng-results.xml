@@ -1,37 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6675" started-at="2021-02-19T22:06:46Z" finished-at="2021-02-19T22:06:53Z">
+  <suite name="Default suite" duration-ms="10525" started-at="2021-02-21T21:18:13Z" finished-at="2021-02-21T21:18:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6675" started-at="2021-02-19T22:06:46Z" finished-at="2021-02-19T22:06:53Z">
-      <class name="test.ExtentReportDemoWithTestNG">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.ExtentReportDemoWithTestNG@34b7bfc0]" name="setUp" is-config="true" duration-ms="156" started-at="2021-02-20T03:36:46Z" finished-at="2021-02-20T03:36:46Z">
+    <test name="Default test" duration-ms="10525" started-at="2021-02-21T21:18:13Z" finished-at="2021-02-21T21:18:23Z">
+      <class name="test.webTables_Selenium">
+        <test-method status="PASS" signature="displayAllValuesOfDynamicTable()[pri:0, instance:test.webTables_Selenium@90f6bfd]" name="displayAllValuesOfDynamicTable" duration-ms="10515" started-at="2021-02-22T02:48:13Z" finished-at="2021-02-22T02:48:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testSetUp()[pri:0, instance:test.ExtentReportDemoWithTestNG@34b7bfc0]" name="testSetUp" is-config="true" duration-ms="1720" started-at="2021-02-20T03:36:46Z" finished-at="2021-02-20T03:36:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSetUp -->
-        <test-method status="PASS" signature="testOne()[pri:0, instance:test.ExtentReportDemoWithTestNG@34b7bfc0]" name="testOne" duration-ms="2746" started-at="2021-02-20T03:36:48Z" finished-at="2021-02-20T03:36:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testOne -->
-        <test-method status="PASS" signature="testTwo()[pri:0, instance:test.ExtentReportDemoWithTestNG@34b7bfc0]" name="testTwo" duration-ms="1548" started-at="2021-02-20T03:36:51Z" finished-at="2021-02-20T03:36:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTwo -->
-        <test-method status="PASS" signature="testTearDown()[pri:0, instance:test.ExtentReportDemoWithTestNG@34b7bfc0]" name="testTearDown" is-config="true" duration-ms="655" started-at="2021-02-20T03:36:52Z" finished-at="2021-02-20T03:36:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTearDown -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.ExtentReportDemoWithTestNG@34b7bfc0]" name="tearDown" is-config="true" duration-ms="205" started-at="2021-02-20T03:36:53Z" finished-at="2021-02-20T03:36:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- test.ExtentReportDemoWithTestNG -->
+        </test-method> <!-- displayAllValuesOfDynamicTable -->
+      </class> <!-- test.webTables_Selenium -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
