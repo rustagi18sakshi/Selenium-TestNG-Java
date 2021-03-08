@@ -4,7 +4,7 @@ public class ExceptionHandlingDemo {
 	
 	public static void main(String[] args) {
 		
-		//Try block has be followed by one or multiple catch blocks or finally block
+		//Try block has be followed by one or multiple catch blocks or one finally block
 		//Even if there is no catch block but just finally block, then also try will execute.
 		try
 		{

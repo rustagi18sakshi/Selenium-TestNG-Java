@@ -16,7 +16,7 @@ public class DesiredCapabilitiesDemo {
 	
 	public static void main(String[] args) {
 		
-		//Setting driver for IE driver
+		//Setting properties for IE driver
 		String projectPath = System.getProperty("user.dir");
 		System.out.println("Project path is : "+projectPath);
 		System.setProperty("webdriver.ie.driver", projectPath+"/drivers/iedriver/IEDriverServer.exe");
@@ -26,7 +26,7 @@ public class DesiredCapabilitiesDemo {
 		cap.setCapability("ignoreProtectedModeSettings", true);
 		cap.setCapability("ignoreZoomSetting", true);
 		
-		//This desired capability object has to be passed as a variable to Webdriver
+		//This desired capability object has to be passed as a variable to WebDriver
 		WebDriver driver = new InternetExplorerDriver(cap);
 		
 		driver.get("https://www.google.com");

@@ -81,7 +81,7 @@ public class webTables_Selenium {
         double maximum = 0;
         for (int i=1;i<=rows.size();i++)
         {    
-            String max= driver.findElement(By.xpath(".//*[@id='leftcontainer']/table/tbody/tr["+(i+1)+"]/td[4]")).getText();
+            String max= driver.findElement(By.xpath(".//*[@id='leftcontainer']/table/tbody/tr["+i+"]/td[4]")).getText();
             double value = Double.parseDouble(max);
             if(value>maximum)
              {    
@@ -116,8 +116,8 @@ public class webTables_Selenium {
   
     	    for (int j=1;j<= cols.size();j++) {
     	        // To retrieve text from that specific cell.
-    	        String celltext = driver.findElement(By.xpath(".//*[@id='leftcontainer']/table/tbody/tr["+i+"]/td["+j+"]")).getText() ;
-    	        System.out.println("Cell Value of row number " + i + " and column number " + j + " Is " + celltext);
+    	        String celltext = driver.findElement(By.xpath(".//*[@id='leftcontainer']/table/tbody/tr["+i+"]/td["+j+"]")).getText();
+    	        System.out.println("Cell Value of row number " + i + " and column number " + j + " is " + celltext);
     	 }
     	    System.out.println();
        	}

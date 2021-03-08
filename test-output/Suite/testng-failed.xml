@@ -16,17 +16,17 @@
   </test> <!-- Test -->
   <test name="Test(failed)">
     <classes>
-      <class name="listeners.TestNGListenerDemo2">
-        <methods>
-          <include name="test6"/>
-        </methods>
-      </class> <!-- listeners.TestNGListenerDemo2 -->
       <class name="listeners.TestNGListenerDemo">
         <methods>
           <include name="test3"/>
           <include name="test2"/>
         </methods>
       </class> <!-- listeners.TestNGListenerDemo -->
+      <class name="listeners.TestNGListenerDemo2">
+        <methods>
+          <include name="test6"/>
+        </methods>
+      </class> <!-- listeners.TestNGListenerDemo2 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

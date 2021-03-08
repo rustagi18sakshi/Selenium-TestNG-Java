@@ -19,8 +19,8 @@ Select the class -> Right Click -> TestNG -> Convert to TestNG
 public class GoogleSearch_TestNG_Demo {
 
 	WebDriver driver = null;
-	//Making use of property set in config.properties file
 	public static String browserName = null;
+	PropertiesFile_demo propDemo = new PropertiesFile_demo();   	// Creating object for PropertiesFile_demo class
 	
 	@BeforeTest
 	public void setUpTest()
@@ -29,7 +29,8 @@ public class GoogleSearch_TestNG_Demo {
 		System.out.println("Project path is :"+projectPath);
 		
 		//To get the value of browserName through Properties file
-		PropertiesFile_demo.getProperties();
+		propDemo.getProperties();
+		browserName = propDemo.browser;
 		
 		// For running on Chrome browser
 		if(browserName.equalsIgnoreCase("chrome"))
