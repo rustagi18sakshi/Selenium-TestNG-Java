@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="35" started-at="2021-02-19T17:19:13 IST" finished-at="2021-02-19T17:19:14 IST">
+  <suite name="Surefire suite" duration-ms="95" started-at="2021-03-18T02:09:38 IST" finished-at="2021-03-18T02:09:38 IST">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="35" started-at="2021-02-19T17:19:13 IST" finished-at="2021-02-19T17:19:14 IST">
-      <class name="testngDemo.TestNGPriorityDemo">
-        <test-method status="PASS" signature="one()[pri:0, instance:testngDemo.TestNGPriorityDemo@23faf8f2]" name="one" duration-ms="3" started-at="2021-02-19T17:19:14 IST" finished-at="2021-02-19T17:19:14 IST">
+    <test name="Surefire test" duration-ms="95" started-at="2021-03-18T02:09:38 IST" finished-at="2021-03-18T02:09:38 IST">
+      <class name="aeonbitsMultipleEnvExecution.BaseWeb">
+        <test-method status="PASS" signature="test()[pri:0, instance:aeonbitsMultipleEnvExecution.BaseWeb@3b088d51]" name="test" duration-ms="59" started-at="2021-03-18T02:09:38 IST" finished-at="2021-03-18T02:09:38 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- one -->
-        <test-method status="PASS" signature="three()[pri:2, instance:testngDemo.TestNGPriorityDemo@23faf8f2]" name="three" duration-ms="1" started-at="2021-02-19T17:19:14 IST" finished-at="2021-02-19T17:19:14 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- three -->
-        <test-method status="PASS" signature="two()[pri:1, instance:testngDemo.TestNGPriorityDemo@23faf8f2]" name="two" duration-ms="0" started-at="2021-02-19T17:19:14 IST" finished-at="2021-02-19T17:19:14 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- two -->
-      </class> <!-- testngDemo.TestNGPriorityDemo -->
+        </test-method> <!-- test -->
+      </class> <!-- aeonbitsMultipleEnvExecution.BaseWeb -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

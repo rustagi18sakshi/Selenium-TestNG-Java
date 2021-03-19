@@ -3,6 +3,7 @@ package testngDemo;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
@@ -36,7 +37,7 @@ public class TestNGMultiBrowserDemo {
 		else if(browserName.equalsIgnoreCase("ie"))
 		{
 			System.setProperty("webdriver.ie.driver", projectPath+"/drivers/iedriver/IEDriverServer.exe");
-			driver = new FirefoxDriver();
+			driver = new InternetExplorerDriver();
 		}
 	}
 	

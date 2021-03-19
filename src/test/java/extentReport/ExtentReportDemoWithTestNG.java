@@ -1,16 +1,14 @@
-package test;
+package extentReport;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
-import pageObject.GoogleSearchPage;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -48,10 +46,10 @@ public class ExtentReportDemoWithTestNG {
 		driver.get("https://www.google.com/");
 		test1.pass("Navigated to the google website");
 		
-		GoogleSearchPage.textbox_search(driver).sendKeys("Step by step automation");
+		driver.findElement(By.name("q")).sendKeys("Step by step automation");
 		test1.pass("Entered text in search box");
 		
-		GoogleSearchPage.textbox_search(driver).sendKeys(Keys.RETURN);
+		driver.findElement(By.name("q")).sendKeys(Keys.RETURN);
 		test1.pass("Pressed keyboard enter key");
 	}
 	
@@ -64,10 +62,10 @@ public class ExtentReportDemoWithTestNG {
 		driver.get("https://www.google.com/");
 		test2.pass("Navigated to the google website");
 		
-		GoogleSearchPage.textbox_search(driver).sendKeys("Step by step automation");
+		driver.findElement(By.name("q")).sendKeys("Step by step automation");
 		test2.pass("Entered text in search box");
 		
-		GoogleSearchPage.textbox_search(driver).sendKeys(Keys.RETURN);
+		driver.findElement(By.name("q")).sendKeys(Keys.RETURN);
 		test2.pass("Pressed keyboard enter key");
 	}
 	

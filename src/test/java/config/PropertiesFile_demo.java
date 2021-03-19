@@ -6,8 +6,9 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.Properties;
 
-import test.GoogleSearch_TestNG_Demo;
-
+/*
+Implementation can be checked in file : "\src\test\java\test\GoogleSearch_TestNG_Demo.java"
+*/
 public class PropertiesFile_demo {
 
 	static String projectPath = System.getProperty("user.dir");

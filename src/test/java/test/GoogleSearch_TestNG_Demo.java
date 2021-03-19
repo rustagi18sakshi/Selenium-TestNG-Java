@@ -1,4 +1,9 @@
 package test;
+import java.io.File;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -8,6 +13,8 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import ru.yandex.qatools.ashot.AShot;
+import ru.yandex.qatools.ashot.Screenshot;
 import config.PropertiesFile_demo;
 
 /*
@@ -47,7 +54,7 @@ public class GoogleSearch_TestNG_Demo {
 	}
 	
 	@Test
-	public void googleSearch() throws InterruptedException {
+	public void googleSearch() throws InterruptedException, IOException, Exception {
 		
 		driver.get("https://www.google.com/");	
 		//enter text in google search textbox
@@ -56,6 +63,8 @@ public class GoogleSearch_TestNG_Demo {
 		//click on enter button to complete search
 		driver.findElement(By.name("q")).sendKeys(Keys.RETURN);	
 		Thread.sleep(3000);
+		takeScreenShot(driver);
+		
 	}
 
 	@AfterTest
@@ -65,6 +74,14 @@ public class GoogleSearch_TestNG_Demo {
 		PropertiesFile_demo.setProperties();
 		System.out.println("Test completed successfully");
 	}
+	
+	public void takeScreenShot(WebDriver driver) throws IOException 
+	{
+		 String projectPath = System.getProperty("user.dir");
+		 String filePath = projectPath+"/screenshot/";
+	   	 Screenshot screenshot = new AShot().takeScreenshot(driver);
+	   	 ImageIO.write(screenshot.getImage(), "png", new File(filePath+"screenshot.png"));
+   }
 	
 }
 

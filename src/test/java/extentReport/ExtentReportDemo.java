@@ -1,12 +1,11 @@
-package test;
+package extentReport;
 
 import java.io.IOException;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
-import pageObject.GoogleSearchPage;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -39,10 +38,10 @@ public class ExtentReportDemo {
 		driver.get("https://www.google.com/");
 		test1.pass("Navigated to the google website");
 		
-		GoogleSearchPage.textbox_search(driver).sendKeys("Step by step automation");
+		driver.findElement(By.name("q")).sendKeys("Step by step automation");
 		test1.pass("Entered text in search box");
 		
-		GoogleSearchPage.textbox_search(driver).sendKeys(Keys.RETURN);
+		driver.findElement(By.name("q")).sendKeys(Keys.RETURN);
 		test1.pass("Pressed keyboard enter key");
 		
 		driver.close();
