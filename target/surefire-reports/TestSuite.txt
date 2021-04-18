@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 2, Time elapsed: 1.054 s <<< FAILURE! - in TestSuite
+listeners.TestNGListenerDemo.test2  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at listeners.TestNGListenerDemo.test2(TestNGListenerDemo.java:27)
+
+listeners.TestNGListenerDemo.test2  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at listeners.TestNGListenerDemo.test2(TestNGListenerDemo.java:27)
+

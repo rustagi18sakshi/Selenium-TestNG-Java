@@ -41,7 +41,7 @@ public class ExtentReportDemoWithTestNG {
 	public void testOne() {
 		   
         ExtentTest test1 = extent.createTest("Google Search Test One", "This is a test to validate google search functionality");
-		
+
         test1.log(Status.INFO, "Starting test case");
 		driver.get("https://www.google.com/");
 		test1.pass("Navigated to the google website");

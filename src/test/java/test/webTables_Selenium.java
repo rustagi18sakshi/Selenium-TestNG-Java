@@ -37,7 +37,7 @@ public class webTables_Selenium {
         driver.close();
     }
 	
-	@Test(enabled=false)
+	@Test(enabled=true)
 	// This is used to fetch data at 3rd row and 2nd column
     public void fetchDataAt3Row2Column() {
 		
@@ -51,12 +51,12 @@ public class webTables_Selenium {
         WebElement baseTable = driver.findElement(By.tagName("table")); 
         
         // To find third row of table
-		WebElement tableRow = baseTable.findElement(By.xpath("//*[@id='leftcontainer']/table/tbody/tr[3]"));
+		WebElement tableRow = baseTable.findElement(By.xpath(".//tbody/tr[3]"));
         String rowtext = tableRow.getText();
 		System.out.println("Third row of table : "+rowtext);
 		    
 		// To get 3rd row's 2nd column data
-		WebElement cellIneed = tableRow.findElement(By.xpath("//*[@id='leftcontainer']/table/tbody/tr[3]/td[2]"));
+		WebElement cellIneed = tableRow.findElement(By.xpath(".//td[2]"));
 		String valueIneed = cellIneed.getText();
 		System.out.println("Cell value is : " + valueIneed); 
         		
@@ -93,7 +93,7 @@ public class webTables_Selenium {
         driver.close();
     }
 	
-	@Test
+	//@Test
 	// This method is used to display all the data of the dynamic table
     public void displayAllValuesOfDynamicTable() {
 		
