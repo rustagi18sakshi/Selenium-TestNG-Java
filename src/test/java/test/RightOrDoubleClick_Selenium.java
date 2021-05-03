@@ -24,7 +24,7 @@ public class RightOrDoubleClick_Selenium {
         driver.manage().window().maximize();
         
 		// Element which needs to be right clicked    		
-        WebElement btnElement =driver.findElement(By.id("rightClickBtn"));						
+        WebElement btnElement = driver.findElement(By.id("rightClickBtn"));						
          		
         // Using Action class
         Actions actions = new Actions(driver);					
@@ -43,7 +43,7 @@ public class RightOrDoubleClick_Selenium {
         	System.out.println("FAIL: Right click is not performed");
         }  
         
-        driver.close();
+        driver.quit();
 	}	
     
     // Script to double click the button using Actions class doubleClick() method
@@ -58,7 +58,7 @@ public class RightOrDoubleClick_Selenium {
         driver.manage().window().maximize();
         
 		// Element which needs to be double clicked    		
-        WebElement btnElement =driver.findElement(By.id("doubleClickBtn"));						
+        WebElement btnElement = driver.findElement(By.id("doubleClickBtn"));						
          		
         // Using Action class
         Actions actions = new Actions(driver);					
@@ -77,6 +77,6 @@ public class RightOrDoubleClick_Selenium {
         	System.out.println("FAIL: Double click is not performed");
         }  
         
-        driver.close();
+        driver.quit();
 	}
 }

@@ -2,105 +2,48 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1974" started-at="2021-04-18T13:00:45Z" finished-at="2021-04-18T13:00:47Z">
+  <suite name="Default suite" duration-ms="9298" started-at="2021-05-03T19:36:55Z" finished-at="2021-05-03T19:37:04Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1974" started-at="2021-04-18T13:00:45Z" finished-at="2021-04-18T13:00:47Z">
-      <class name="test.webTables_Selenium">
-        <test-method status="FAIL" signature="fetchDataAt3Row2Column()[pri:0, instance:test.webTables_Selenium@6537cf78]" name="fetchDataAt3Row2Column" duration-ms="1953" started-at="2021-04-18T18:30:45Z" finished-at="2021-04-18T18:30:47Z">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
+    <test name="Default test" duration-ms="9298" started-at="2021-05-03T19:36:55Z" finished-at="2021-05-03T19:37:04Z">
+      <class name="test.SwitchingWindowsOrTabs">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.SwitchingWindowsOrTabs@2cb4c3ab]" name="setUp" is-config="true" duration-ms="2764" started-at="2021-05-04T01:06:55Z" finished-at="2021-05-04T01:06:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="OpenTabAndSwitchingToSingleTab()[pri:0, instance:test.SwitchingWindowsOrTabs@2cb4c3ab]" name="OpenTabAndSwitchingToSingleTab" duration-ms="5758" started-at="2021-05-04T01:06:57Z" finished-at="2021-05-04T01:07:03Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 88
-Current browser version is 90.0.4430.72 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=90.0.4430.93)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'IONDELWS770', ip: '10.101.130.220', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	GetHandleVerifier [0x0070B963+483]
-	GetHandleVerifier [0x0070B941+449]
-	GetHandleVerifier [0x00AB3308+3832712]
-	GetHandleVerifier [0x00ACD69A+3940122]
-	GetHandleVerifier [0x00AC9AFB+3924859]
-	GetHandleVerifier [0x00AC7D9C+3917340]
-	GetHandleVerifier [0x00AEE7FE+4075646]
-	GetHandleVerifier [0x00AEE56C+4074988]
-	GetHandleVerifier [0x00AEB2EB+4062059]
-	GetHandleVerifier [0x00ACED14+3945876]
-	GetHandleVerifier [0x00ACFBCE+3949646]
-	GetHandleVerifier [0x00ACFB59+3949529]
-	Ordinal0 [0x006CB5CC+46540]
-	Ordinal0 [0x006C9F53+40787]
-	Ordinal0 [0x006C9B12+39698]
-	GetHandleVerifier [0x009D1468+2907368]
-	GetHandleVerifier [0x008171EE+1096302]
-	GetHandleVerifier [0x007D3E8D+821005]
-	GetHandleVerifier [0x007D396B+819691]
-	GetHandleVerifier [0x007D3881+819457]
-	GetHandleVerifier [0x007FF463+998627]
-	BaseThreadInitThunk [0x7778FA29+25]
-	RtlGetAppContainerNamedObjectPath [0x77CA7A4E+286]
-	RtlGetAppContainerNamedObjectPath [0x77CA7A1E+238]
-]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\SAKSHI~1.RUS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49584}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 146060514195dcda1853968893b892ac]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 88
-Current browser version is 90.0.4430.72 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=90.0.4430.93)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'IONDELWS770', ip: '10.101.130.220', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	GetHandleVerifier [0x0070B963+483]
-	GetHandleVerifier [0x0070B941+449]
-	GetHandleVerifier [0x00AB3308+3832712]
-	GetHandleVerifier [0x00ACD69A+3940122]
-	GetHandleVerifier [0x00AC9AFB+3924859]
-	GetHandleVerifier [0x00AC7D9C+3917340]
-	GetHandleVerifier [0x00AEE7FE+4075646]
-	GetHandleVerifier [0x00AEE56C+4074988]
-	GetHandleVerifier [0x00AEB2EB+4062059]
-	GetHandleVerifier [0x00ACED14+3945876]
-	GetHandleVerifier [0x00ACFBCE+3949646]
-	GetHandleVerifier [0x00ACFB59+3949529]
-	Ordinal0 [0x006CB5CC+46540]
-	Ordinal0 [0x006C9F53+40787]
-	Ordinal0 [0x006C9B12+39698]
-	GetHandleVerifier [0x009D1468+2907368]
-	GetHandleVerifier [0x008171EE+1096302]
-	GetHandleVerifier [0x007D3E8D+821005]
-	GetHandleVerifier [0x007D396B+819691]
-	GetHandleVerifier [0x007D3881+819457]
-	GetHandleVerifier [0x007FF463+998627]
-	BaseThreadInitThunk [0x7778FA29+25]
-	RtlGetAppContainerNamedObjectPath [0x77CA7A4E+286]
-	RtlGetAppContainerNamedObjectPath [0x77CA7A1E+238]
-
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\SAKSHI~1.RUS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49584}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 146060514195dcda1853968893b892ac
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
-	at test.webTables_Selenium.fetchDataAt3Row2Column(webTables_Selenium.java:46)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.defaultContent(RemoteWebDriver.java:922)
+	at test.SwitchingWindowsOrTabs.OpenTabAndSwitchingToSingleTab(SwitchingWindowsOrTabs.java:70)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -127,11 +70,15 @@ remote stacktrace: Backtrace:
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fetchDataAt3Row2Column -->
-      </class> <!-- test.webTables_Selenium -->
+        </test-method> <!-- OpenTabAndSwitchingToSingleTab -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.SwitchingWindowsOrTabs@2cb4c3ab]" name="tearDown" is-config="true" duration-ms="765" started-at="2021-05-04T01:07:03Z" finished-at="2021-05-04T01:07:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.SwitchingWindowsOrTabs -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

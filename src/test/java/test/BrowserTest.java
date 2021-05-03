@@ -7,7 +7,6 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 public class BrowserTest {
 
 	public static void main(String[] args) throws InterruptedException {
-		// TODO Auto-generated method stub
 
 		// Getting path of current project
 		String projectPath = System.getProperty("user.dir");

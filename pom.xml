@@ -11,6 +11,14 @@
   		<version>3.141.59</version>
   	</dependency>
   	
+    <!-- https://github.com/bonigarcia/webdrivermanager -->
+	<dependency>
+	    <groupId>io.github.bonigarcia</groupId>
+	    <artifactId>webdrivermanager</artifactId>
+	    <version>4.3.1</version>
+	    <scope>test</scope>
+    </dependency>
+	    
   	<!-- https://mvnrepository.com/artifact/junit/junit -->
 	<dependency>
 	    <groupId>junit</groupId>

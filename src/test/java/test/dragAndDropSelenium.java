@@ -1,9 +1,6 @@
 package test;
 
-import java.io.File;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -27,10 +24,10 @@ public class dragAndDropSelenium {
         driver.manage().window().maximize();
         
 		//Element which needs to drag.    		
-        WebElement From=driver.findElement(By.xpath("//*[@id='credit2']/a"));	
+        WebElement From = driver.findElement(By.xpath("//*[@id='credit2']/a"));	
 
         //Element on which need to drop.		
-        WebElement To=driver.findElement(By.xpath("//*[@id='bank']/li"));					
+        WebElement To = driver.findElement(By.xpath("//*[@id='bank']/li"));					
          		
         //Using Action class for drag and drop.		
         Actions actions = new Actions(driver);					
@@ -53,10 +50,10 @@ public class dragAndDropSelenium {
         driver.manage().window().maximize();
         
         //Element(BANK) which need to drag.		
-        WebElement From=driver.findElement(By.xpath("//*[@id='credit2']/a"));					
+        WebElement From = driver.findElement(By.xpath("//*[@id='credit2']/a"));					
       
         //Using Action class for drag and drop.		
-        Actions actions=new Actions(driver);					
+        Actions actions = new Actions(driver);					
       
         //Drag and Drop by Pixel.		
         actions.dragAndDropBy(From,135, 40).build().perform();
@@ -92,10 +89,10 @@ public class dragAndDropSelenium {
         System.out.println("xOffset2--->"+xOffset2+" yOffset2--->"+yOffset2);
         
         //Find the xOffset and yOffset difference to find x and y offset needed in which from object required to dragged and dropped
-        int xOffset =(xOffset2-xOffset1);
-        int yOffset=(yOffset2-yOffset1);
+        int xOffset = (xOffset2-xOffset1);
+        int yOffset = (yOffset2-yOffset1);
         
-        Actions actions=new Actions(driver);					
+        Actions actions = new Actions(driver);					
       
         //Drag and Drop by Pixel.		
         actions.dragAndDropBy(from,xOffset,yOffset).perform();
