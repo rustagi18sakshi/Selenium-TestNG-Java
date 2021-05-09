@@ -1,10 +1,14 @@
 package testngDemo;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -15,7 +19,7 @@ public class TestNGMultiBrowserDemo {
 	WebDriver driver = null;
 	String projectPath = System.getProperty("user.dir");
 	
-	@BeforeTest
+	@BeforeMethod
 	@Parameters("browserName")
 	public void setUp(String browserName){
 		System.out.println("Browser name is : "+browserName);
@@ -24,7 +28,7 @@ public class TestNGMultiBrowserDemo {
 		// For running on Chrome browser
 		if(browserName.equalsIgnoreCase("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", projectPath+"/drivers/chromedriver/chromedriver.exe");
+			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		}
 		// For running on Firefox browser
@@ -47,7 +51,7 @@ public class TestNGMultiBrowserDemo {
 		Thread.sleep(4000);
 	}
 	
-	@AfterTest
+	@AfterMethod
 	public void tearDownTest() {
 		driver.close();
 		System.out.println("Test completed successfully");
