@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 //We need to use annotation @Listener over the class and provide the name of the Listener class
 
-@Listeners(listeners.TestNGListeners.class)
+//@Listeners(listeners.TestNGListeners.class)
 public class TestNGListenerDemo2 {
 
 	//For verifying success
